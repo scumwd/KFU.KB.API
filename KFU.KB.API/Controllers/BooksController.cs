@@ -88,6 +88,7 @@ namespace KFU.KB.API.Controllers
                 var cmd = new NpgsqlCommand(sqlExpression, connection);
                 int number = cmd.ExecuteNonQuery();
                 Console.WriteLine("Добавлено объектов: {0}", number);
+                Update(book);
                 connection.Close();
 
             }
@@ -101,6 +102,10 @@ namespace KFU.KB.API.Controllers
                 Console.WriteLine("Подключение закрыто...");
             }
         }
+        
+        [HttpPut] 
+        public void Update(Book item) => 
+            CreateItem(item);
 
         [HttpDelete]
         public void RemoveItem(int id)
