@@ -1,21 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Npgsql;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace KFU.KB.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class BooksController : Controller
     {
         private static string connectionString = @"Host=localhost;port=5432;Database=kb.api";
-        private static NpgsqlConnection connection = new NpgsqlConnection(connectionString);
+        private static NpgsqlConnection connection = new (connectionString);
 
+       /* [HttpGet]
         public List<Book> GetAllItems()
         {
             List<Book> listreult = new List<Book>();
@@ -49,7 +47,8 @@ namespace KFU.KB.API.Controllers
             return listreult;
         }
 
-        public Book GetItem(int id)
+        [HttpGet]
+        public Book GetItem(Guid id)
         {
             var book = new Book();
             try
@@ -57,7 +56,7 @@ namespace KFU.KB.API.Controllers
                 connection.Open();
                 Console.WriteLine("Подключение открыто");
                 var cmd = new NpgsqlCommand();
-                cmd.CommandText = ($"SELECT * FROM books where bookid={id}");
+                cmd.CommandText = ($"SELECT * FROM books where bookid='{id}'");
 
                 var reader = cmd.ExecuteReader();
                 reader.Read();
@@ -80,7 +79,7 @@ namespace KFU.KB.API.Controllers
         [HttpPost]
         public void CreateItem([FromBody] Book book)
         {
-            string sqlExpression = $"INSERT INTO authors (authorid,authorname,authordate,authorbook) VALUES ({book.BookId},{book.BookName},{book.BookDate},{book.BookAuthor})";
+            string sqlExpression = $"INSERT INTO books (bookid,booktitle,bookdate,BookCountOfPage) VALUES ({book.BookId},{book.BookTitle},{book.BookDate},{book.BookCountOfPage})";
             try
             {
                 connection.Open();
@@ -113,6 +112,6 @@ namespace KFU.KB.API.Controllers
                 int number = cmd.ExecuteNonQuery();
                 Console.WriteLine("Удалено объектов: {0}", number);
             }
-        }
+        }*/
     }
 }

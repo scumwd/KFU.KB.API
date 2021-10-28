@@ -25,7 +25,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.BAC/KFU.KB.BAC.csproj": {
+                "projectPath": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.BAC/KFU.KB.BAC.csproj"
+              },
+              "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/KFU.KB.DAL.csproj": {
+                "projectPath": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/KFU.KB.DAL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -57,6 +64,120 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.BAC/KFU.KB.BAC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.BAC/KFU.KB.BAC.csproj",
+        "projectName": "KFU.KB.BAC",
+        "projectPath": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.BAC/KFU.KB.BAC.csproj",
+        "packagesPath": "/Users/scumwd/.nuget/packages/",
+        "outputPath": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.BAC/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/scumwd/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/KFU.KB.DAL.csproj": {
+                "projectPath": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/KFU.KB.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/KFU.KB.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/KFU.KB.DAL.csproj",
+        "projectName": "KFU.KB.DAL",
+        "projectPath": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/KFU.KB.DAL.csproj",
+        "packagesPath": "/Users/scumwd/.nuget/packages/",
+        "outputPath": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/scumwd/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

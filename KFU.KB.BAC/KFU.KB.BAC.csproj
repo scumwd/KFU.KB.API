@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Models.BAC\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Models.BAC\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Models.BAC\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\KFU.KB.DAL\KFU.KB.DAL.csproj" />
+    </ItemGroup>
+
+</Project>

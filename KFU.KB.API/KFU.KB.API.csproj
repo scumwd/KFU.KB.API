@@ -7,8 +7,33 @@
   <ItemGroup>
     <None Remove="Npgsql" />
     <None Remove="Database" />
+    <None Remove="Logic\**" />
+    <None Remove="Models\**" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Npgsql" Version="5.0.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="temp2.cs" />
+    <Compile Remove="Authotemp.cs" />
+    <Compile Remove="Controllers\CheckExist.cs" />
+    <Compile Remove="Logic\ConvertToDateTime.cs" />
+    <Compile Remove="Logic\CreateEntity.cs" />
+    <Compile Remove="Logic\**" />
+    <Compile Remove="temp.cs" />
+    <Compile Remove="ParseAuthorAPI.cs" />
+    <Compile Remove="Models\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KFU.KB.BAC\KFU.KB.BAC.csproj" />
+    <ProjectReference Include="..\KFU.KB.DAL\KFU.KB.DAL.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Logic\**" />
+    <EmbeddedResource Remove="Models\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Logic\**" />
+    <Content Remove="Models\**" />
   </ItemGroup>
 </Project>

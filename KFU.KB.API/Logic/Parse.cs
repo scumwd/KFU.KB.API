@@ -6,7 +6,7 @@ namespace KFU.KB.API.Logic
     {
         public static void ParseToAuthor(string author)
         {   
-            var array = author.Split(new string[] {" ", ", ", "."}, StringSplitOptions.RemoveEmptyEntries);
+            var array = author.Split(new string[] {" "}, StringSplitOptions.RemoveEmptyEntries);
             CreateEntity.CreateEntityAuthor(array);
         }
         

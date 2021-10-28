@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Mn/vsqRkPCSFIqk66FrOWc5RJz3GqAKOYDhNLS9lRF1ucFhdLhfqP6nocBfFw75dIirWnSp/QZ7duJWFvP+t5w==",
+  "success": true,
+  "projectFilePath": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/KFU.KB.DAL.csproj",
+  "expectedPackageFiles": [
+    "/Users/scumwd/.nuget/packages/npgsql/5.0.10/npgsql.5.0.10.nupkg.sha512",
+    "/Users/scumwd/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
