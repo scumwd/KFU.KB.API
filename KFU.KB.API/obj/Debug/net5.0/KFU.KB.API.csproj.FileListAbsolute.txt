@@ -21,4 +21,8 @@
 /Users/scumwd/Projects/KFU.KB.API/KFU.KB.API/obj/Debug/net5.0/KFU.KB.API.pdb
 /Users/scumwd/Projects/KFU.KB.API/KFU.KB.API/obj/Debug/net5.0/KFU.KB.API.genruntimeconfig.cache
 /Users/scumwd/Projects/KFU.KB.API/KFU.KB.API/bin/Debug/net5.0/Npgsql.dll
+/Users/scumwd/Projects/KFU.KB.API/KFU.KB.API/bin/Debug/net5.0/KFU.KB.BAC.dll
+/Users/scumwd/Projects/KFU.KB.API/KFU.KB.API/bin/Debug/net5.0/KFU.KB.DAL.dll
+/Users/scumwd/Projects/KFU.KB.API/KFU.KB.API/bin/Debug/net5.0/KFU.KB.BAC.pdb
+/Users/scumwd/Projects/KFU.KB.API/KFU.KB.API/bin/Debug/net5.0/KFU.KB.DAL.pdb
 /Users/scumwd/Projects/KFU.KB.API/KFU.KB.API/obj/Debug/net5.0/KFU.KB.API.csproj.CopyComplete

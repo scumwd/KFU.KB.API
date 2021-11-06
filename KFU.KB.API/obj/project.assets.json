@@ -22,6 +22,32 @@
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
+      },
+      "KFU.KB.BAC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "KFU.KB.DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/KFU.KB.BAC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KFU.KB.BAC.dll": {}
+        }
+      },
+      "KFU.KB.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Npgsql": "5.0.10"
+        },
+        "compile": {
+          "bin/placeholder/KFU.KB.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/KFU.KB.DAL.dll": {}
+        }
       }
     }
   },
@@ -70,10 +96,22 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "KFU.KB.BAC/1.0.0": {
+      "type": "project",
+      "path": "../KFU.KB.BAC/KFU.KB.BAC.csproj",
+      "msbuildProject": "../KFU.KB.BAC/KFU.KB.BAC.csproj"
+    },
+    "KFU.KB.DAL/1.0.0": {
+      "type": "project",
+      "path": "../KFU.KB.DAL/KFU.KB.DAL.csproj",
+      "msbuildProject": "../KFU.KB.DAL/KFU.KB.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "KFU.KB.BAC >= 1.0.0",
+      "KFU.KB.DAL >= 1.0.0",
       "Npgsql >= 5.0.10"
     ]
   },
@@ -101,7 +139,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.BAC/KFU.KB.BAC.csproj": {
+              "projectPath": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.BAC/KFU.KB.BAC.csproj"
+            },
+            "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/KFU.KB.DAL.csproj": {
+              "projectPath": "/Users/scumwd/Projects/KFU.KB.API/KFU.KB.DAL/KFU.KB.DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
