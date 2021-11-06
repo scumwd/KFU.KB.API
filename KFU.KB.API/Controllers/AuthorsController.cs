@@ -28,6 +28,7 @@ namespace KFU.KB.API.Controllers
 
         [HttpDelete("{id:guid}")]
         public string RemoveItem(Guid id) => DBConnect.RemoveAuthor(id);
+=======
 
     }
 }
